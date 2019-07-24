@@ -6,6 +6,137 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML EMAIL</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">   
+    <style>
+        /*Desktop Version*/
+        @media only screen and (min-width: 960px){
+            .container {
+                width: 960px;
+            }
+            .header-left {
+                padding: 26px 15px 90px 15px !important;
+            }
+            .one-solution-container{
+                text-align: center;
+            }
+            .one-solution-container img {
+                max-width: 611px;
+            }
+        }
+        /*Midsize Version*/
+        @media only screen and (max-width: 960px){
+            .container {
+                width: 600px;
+                overflow-x: hidden !important;
+            }
+        }
+        /*Mobile Version*/
+        @media only screen and (max-width: 600px){
+            html, body{
+                padding: 0;
+                margin: 0;
+                overflow-x: hidden !important;
+            }
+            p {
+                font-size: 4vw !important;
+                padding: 0 2px;
+            }
+            h3{
+                font-size: 6vw !important;
+            }
+            .container {
+                width: 100vw !important;
+                overflow-x: hidden !important;
+            }
+            /*Header*/
+            .header-left {
+                width: 100% !important;
+            }
+            .header-right {
+                width: 100% !important;
+            } 
+            /*Lets you Row*/
+            .hero-lets-you{
+                width: 100% !important;
+            }
+            .hero-lets-you table {
+                width: 100% !important;
+            }
+            .column-content tr td{
+                width: 50% !important;
+                text-align: left !important;
+            }
+            .column-content tr td img {
+                float: right;
+            }
+            .lets-you-row .lets-you-left tr td p {
+                text-align: center;
+                width: 100% ;
+            }
+            .lets-you-row .lets-you-center tr td p {
+                text-align: center;
+                width: 100% ;
+            }
+            .lets-you-row .lets-you-right tr td p {
+                text-align: center;
+                width: 100% ;
+            }
+            .lets-you-row a {
+                width: 100%;
+                text-align: center;
+            }
+            .learn-more td {
+                max-width: 100px;
+                line-height: 1.5;
+                width: 100px !important;
+                text-align: center;
+            }
+            /*Advanced Row*/
+            .advanced-row {
+                width: 100vw !important;
+            }
+            .content-box-left, .content-box-right{
+                width: 100%;
+                text-align: center;
+            }
+            .content-box-left p, .content-box-right p{
+                text-align: center !important   ;
+            }
+            .store-app {
+                width: 100%;
+                text-align: center;
+            }
+            .app-img {
+                text-align: center;
+            }
+            /*Join together row*/
+            .join-together-container tr td h3 {
+                font-size: 20px !important;
+            }
+            .join-together-left, .join-together-center, .join-together-right {
+                width: 100%;
+            }
+            /*One solution*/
+            .one-solution-container tr td img {
+                width: 100vw !important;
+            }
+            /*Detail row*/
+            .one-column-first, .one-column-second, .one-column-third, .two-column-first, .two-column-second, .two-column-third {
+                width: 100%;
+                text-align: center;
+            }
+
+            .text-row p {
+                text-align: center !important;
+            }
+            .icon-row tr td {
+                    width: 50%
+            }
+            .icon-row tr td:first-child {
+                float: right !important;
+            }
+
+        }
+    </style>
 </head>
 <body>
     <!-- Start of email -->
@@ -16,13 +147,13 @@
                 <table class="container" style="text-align: center; background: white;" width="600px" cellspacing="0" cellpadding="0">
                     <!--Start of {Header} row-->
                     <tr>
-                        <td>
-                            <!--Left Column Start-->
+                        <td class="header" style="padding: 0; margin: 0; width: 100%; background: white;">
+                            <!--LEFT-->
                             <table class="header-left" style="float: left; text-align: left; border: none; background: rgb(2,0,36);
                             background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(7,89,249,1) 0%, rgba(0,212,255,1) 100%); padding: 15px 15px 80px 15px;" width="50%" cellspacing="0" cellpadding="0">
                                 <tr>
                                     <td style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: white;">
-                                        <img src="./images/logo.png">
+                                        <img src="./images/logo.png" alt="logo">
                                         <h2 style="font-size: 30px; margin: 0; font-weight: 300; line-height: 1; padding: 25px 0 5px;">Get ready for</h2>
                                         <h1 style="font-size: 80px; margin: 0 0 0 -5px; line-height: 1; padding: 0 0 5px 0; text-align: left;">HERO</h1>
                                         <p style="font-size: 14px; margin: 0; line-height: 1.5; padding: 20px 0 45px; font-style: italic;">It seems like hundreds of new iWatch apps pop up every week, but wich ones should you bother trying?</p>
@@ -30,13 +161,11 @@
                                     </td>
                                 </tr>
                             </table>
-                            <!--Left Column End-->
-
-                            <!--Right Column Start-->
-                            <table class="header-right" style="float: left; border: none;" width="50%" cellspacing="0" cellpadding="0">
+                            <!--RIGHT-->
+                            <table class="header-right" style="background: white; float: left; border: none;" width="50%" cellspacing="0" cellpadding="0">
                                 <tr>
                                     <td style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: white;">
-                                        <table class="container" width="100%" cellspacing="0" cellpadding="0" style="border: none; padding: 20px;">
+                                        <table class="header-links" width="100%" cellspacing="0" cellpadding="0" style="border: none; padding: 20px;">
                                             <tr>
                                                 <td margin="auto">
                                                     <a href="#" style="color: #7d7d7d; text-decoration: none; font-size: 14px; font-weight: 600; text-align: center">ABOUT</a>
@@ -56,156 +185,156 @@
                                         <img src="./images/smartwatch.png">
                                     </td>
                                 </tr>
-                            </table>
-                            <!--Right Column End-->
+                            </table>  
+
                         </td>
                     </tr>
                     <!--End of {Header} row-->
                     <!--Start of {Hero Let's you} row-->
                     <tr>
                         <td>
-                            <table style="background: #fafafa; padding: 20px 0 75px 0;">
-                    <tr style="background: #fafafa;">
-                        <td style="border: none; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;">
-                            <h3 style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-weight: 300; font-size: 24px; ;padding: 24px 0px 4px 0px">Hero let's you</h3>
-                            <!--Left column Start-->
-                            <table class="header-left" style="float: left; text-align: left; border: none; padding: 15px 15px 0px 15px;" width="33.333%" cellspacing="0" cellpadding="0">
-                                <tr style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;">
-                                    <td>
-                                        <table class="header-left" width="100%" cellspacing="0" cellpadding="0">
+                            <table class="hero-lets-you" style="width: 100%; background: #fafafa; padding: 20px 0 75px 0;">
+                                <tr style="background: #fafafa;">
+                                    <td class="lets-you-row" style="border: none; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;">
+                                        <h3 style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-weight: 300; font-size: 24px; ;padding: 24px 0px 4px 0px">Hero let's you</h3>
+                                        <!--Left column Start-->
+                                        <table class="lets-you-left" style="float: left; text-align: left; border: none; padding: 15px 15px 0px 15px;" width="33.333%" cellspacing="0" cellpadding="0">
+                                            <tr style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;">
+                                                <td>
+                                                    <table class="column-content" width="100%" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td>
+                                                                <img src="./images/bell_icon.png">
+                                                            </td>
+                                                            <td style="color: #333333; font-weight: 600; font-size: 14px; text-transform: uppercase; padding: 0 0 0 15px;">
+                                                                Notify
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
                                             <tr>
                                                 <td>
-                                                    <img src="./images/bell_icon.png">
+                                                    <p style="color: #7F887F; font-weight: 400; line-height: 1,8; font-size: 14px;">Quinoa deep activated charcoal hot chicken.</p>
                                                 </td>
-                                                <td style="color: #333333; font-weight: 600; font-size: 14px; text-transform: uppercase; padding: 0 0 0 15px;">
-                                                    Notify
+                                            </tr>
+                                            <tr class="learn-more">
+                                                <td>
+                                                    <a href="#" style="color: #2792ec; font-weight: 600; font-size: 14px; text-decoration: none;">Learn more</a>
                                                 </td>
                                             </tr>
                                         </table>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p style="color: #7F887F; font-weight: 400; line-height: 1,8; font-size: 14px;">Quinoa deep activated charcoal hot chicken.</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="#" style="color: #2792ec; font-weight: 600; font-size: 14px; text-decoration: none;">Learn more</a>
-                                    </td>
-                                </tr>
-                            </table>
-                            <!--Left column End-->
-                            <!--Center column Start-->
-                            <table class="header-left" style="float: left; text-align: left; border: none; padding: 15px 15px 0px 15px;" width="33.333%" cellspacing="0" cellpadding="0">
-                                <tr style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;">
-                                    <td>
-                                        <table class="header-left" width="100%" cellspacing="0" cellpadding="0">
+                                        <!--Left column End-->
+                                        <!--Center column Start-->
+                                        <table class="lets-you-center" style="float: left; text-align: left; border: none; padding: 15px 15px 0px 15px;" width="33.333%" cellspacing="0" cellpadding="0">
+                                            <tr style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;">
+                                                <td>
+                                                    <table class="column-content" width="100%" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td>
+                                                                <img src="./images/share_icon.png">
+                                                            </td>
+                                                            <td style="color: #333333; font-weight: 600; font-size: 14px; text-transform: uppercase; padding: 0 0 0 15px;">
+                                                                share
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
                                             <tr>
                                                 <td>
-                                                    <img src="./images/share_icon.png">
+                                                    <p style="color: #7F887F; font-weight: 400; line-height: 1,8; font-size: 14px;">Kinfolk DIY coloring book enamel.</p>
                                                 </td>
-                                                <td style="color: #333333; font-weight: 600; font-size: 14px; text-transform: uppercase; padding: 0 0 0 15px;">
-                                                    share
+                                            </tr>
+                                            <tr class="learn-more">
+                                                <td>
+                                                    <a href="#" style="color: #2792ec; font-weight: 600; font-size: 14px; text-decoration: none;">Learn more</a>
                                                 </td>
                                             </tr>
                                         </table>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p style="color: #7F887F; font-weight: 400; line-height: 1,8; font-size: 14px;">Kinfolk DIY coloring book enamel.</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="#" style="color: #2792ec; font-weight: 600; font-size: 14px; text-decoration: none;">Learn more</a>
-                                    </td>
-                                </tr>
-                            </table>
-                            <!--Center column End-->
-                            <!--Right column Start-->
-                            <table class="header-left" style="float: left; text-align: left; border: none; padding: 15px 15px 0px 15px;" width="33.333%" cellspacing="0" cellpadding="0">
-                                <tr style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;">
-                                    <td>
-                                        <table class="header-left" width="100%" cellspacing="0" cellpadding="0">
+                                        <!--Center column End-->
+                                        <!--Right column Start-->
+                                        <table class="lets-you-right" style="float: left; text-align: left; border: none; padding: 15px 15px 0px 15px;" width="33.333%" cellspacing="0" cellpadding="0">
+                                            <tr style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;">
+                                                <td>
+                                                    <table class="column-content" width="100%" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td>
+                                                                <img src="./images/wifi_icon.png">
+                                                            </td>
+                                                            <td style="color: #333333; font-weight: 600; font-size: 14px; text-transform: uppercase; padding: 0 0 0 15px;">
+                                                                connect
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
                                             <tr>
                                                 <td>
-                                                    <img src="./images/wifi_icon.png">
+                                                    <p style="color: #7F887F; font-weight: 400; line-height: 1,8; font-size: 14px;">You need a little dummy text for your mockup.</p>
                                                 </td>
-                                                <td style="color: #333333; font-weight: 600; font-size: 14px; text-transform: uppercase; padding: 0 0 0 15px;">
-                                                    connect
+                                            </tr>
+                                            <tr class="learn-more">
+                                                <td>
+                                                    <a href="#" style="color: #2792ec; font-weight: 600; font-size: 14px; text-decoration: none;">Learn more</a>
                                                 </td>
                                             </tr>
                                         </table>
+                                        <!--Right column End-->
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td>
-                                        <p style="color: #7F887F; font-weight: 400; line-height: 1,8; font-size: 14px;">You need a little dummy text for your mockup.</p>
+                                        </table>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td>
-                                        <a href="#" style="color: #2792ec; font-weight: 600; font-size: 14px; text-decoration: none;">Learn more</a>
-                                    </td>
-                                </tr>
-                            </table>
-                            <!--Right column End-->
-                        </td>
-                    </tr>
-                            </table>
-                        </td>
-                    </tr>
                     <!--End of {Hero let's you} row-->  
                     <!--Start of {`Most Advanced`} row-->
-                    <tr> 
-                        <td>
-                                <table class="container" width="100%" cellspacing="0" cellpadding="0" style="padding: 50px 0 75px 0;">
-                                <tr>
+                                <tr> 
                                     <td>
-                                        <img src="./images/image_head.jpg">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <h3 style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-weight: 300; font-size: 24px; ;padding: 20px 0px 0px 0px; margin: 0;">
-                                            World's <span style="font-weight: 400;">most advanced App</span><br>
-                                            with High-Tech solutions</h3>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <table class="content-box" style="float: left; border: none; padding: 15px 15px 0 15px;" width="50%" cellspacing="0" cellpadding="0">
+                                            <table class="advanced-row" width="100%" cellspacing="0" cellpadding="0" style="padding: 50px 0 75px 0;">
                                             <tr>
                                                 <td>
-                                                    <p style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7F887F; font-weight: 400; line-height: 1,8; font-size: 14px; text-align: left; padding: 0 0 30px;">
-                                                        Tote bag vinyl flannel kitsch, banjo food truck craft beer brooklyn seitan letterpress fanny pack unicorn.</p>
+                                                    <img class="img-head" src="./images/image_head.jpg">
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td style="float: right;">
-                                                    <img href="#" src="./images/appstore.png" style="cursor: pointer;">
-                                                </td>
-                                            </tr>
-                                        
-                                        </table>
-                                        <table class="content-box" style="float: left; border: none; padding: 15px 15px 0 15px;" width="50%" cellspacing="0" cellpadding="0">
                                             <tr>
                                                 <td>
-                                                    <p style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7F887F; font-weight: 400; line-height: 1,8; font-size: 14px; text-align: left; padding: 0 0 30px;">
-                                                    Vape try-hard iPhone viral vegan small batch flexitarian. Fixie organic air plant gluten-free cliche mixtape hella. </p>
+                                                    <h3 style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-weight: 300; font-size: 24px; ;padding: 20px 0px 0px 0px; margin: 0;">
+                                                        World's <span style="font-weight: 400;">most advanced App</span><br>
+                                                        with High-Tech solutions</h3>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td style="float: left;">
-                                                    <img href="#" src="./images/playstore.png" style="cursor: pointer;">
+                                                <td>
+                                                    <table class="content-box-left" style="float: left; border: none; padding: 15px 15px 0 15px;" width="50%" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td>
+                                                                <p style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7F887F; font-weight: 400; line-height: 1,8; font-size: 14px; text-align: left; padding: 0 0 30px;">
+                                                                    Tote bag vinyl flannel kitsch, banjo food truck craft beer brooklyn seitan letterpress fanny pack unicorn.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="store-app" style="float: right;">
+                                                                <img href="#" class="app-img" src="./images/appstore.png" style="cursor: pointer;">
+                                                            </td>
+                                                        </tr>
+                                                    
+                                                    </table>
+                                                    <table class="content-box-right" style="float: left; border: none; padding: 15px 15px 0 15px;" width="50%" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td>
+                                                                <p style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7F887F; font-weight: 400; line-height: 1,8; font-size: 14px; text-align: left; padding: 0 0 30px;">
+                                                                Vape try-hard iPhone viral vegan small batch flexitarian. Fixie organic air plant gluten-free cliche mixtape hella. </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="store-app" style="float: left;">
+                                                                <img href="#" class="app-img" src="./images/playstore.png" style="cursor: pointer;">
+                                                            </td>
+                                                        </tr>
+                                                    
+                                                    </table>
                                                 </td>
                                             </tr>
-                                        
-                                        </table>
-                                    </td>
-                                </tr>
                                 </table>
                             </td>
                         </td>
@@ -236,7 +365,7 @@
                                 <tr>
                                     <td>
                                         <!--Left Column-->
-                                        <table class="join-together-container" width="33.333%" cellspacing="0" cellpadding="0" style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; padding: 15px 0; float: left;">
+                                        <table class="join-together-left" width="33.333%" cellspacing="0" cellpadding="0" style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; padding: 15px 0; float: left;">
                                             <tr>
                                                 <td>
                                                     <img src="./images/watch_screen.png">
@@ -259,7 +388,7 @@
                                             </tr>
                                         </table>
                                         <!--Center Column-->
-                                        <table class="join-together-container" width="33.333%" cellspacing="0" cellpadding="0" style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; padding: 15px 0; float: left;">
+                                        <table class="join-together-center" width="33.333%" cellspacing="0" cellpadding="0" style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; padding: 15px 0; float: left;">
                                             <tr>
                                                 <td>
                                                     <img src="./images/watch_screen.png">
@@ -277,7 +406,7 @@
                                             </tr>
                                         </table>
                                         <!--Right Column-->
-                                        <table class="join-together-container" width="33.333%" cellspacing="0" cellpadding="0" style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; padding: 15px 0; float: left;">
+                                        <table class="join-together-right" width="33.333%" cellspacing="0" cellpadding="0" style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; padding: 15px 0; float: left;">
                                             <tr>
                                                 <td>
                                                     <img src="./images/watch_screen.png">
@@ -317,7 +446,7 @@
                                 <tr>
                                     <td>
                                         <!--Column One-->
-                                        <table class="one-column" width="50%" cellspacing="0" cellpadding="0" style="padding: 0; float: left;">  
+                                        <table class="one-column-first" width="50%" cellspacing="0" cellpadding="0" style="padding: 0; float: left;">  
                                             <tr>
                                                 <td>
                                                     <!--Icon table-->
@@ -345,7 +474,7 @@
                                             </tr>
                                         </table>
                                         <!--Column Two-->
-                                        <table class="one-column" width="50%" cellspacing="0" cellpadding="0" style="padding: 0; float: left;">  
+                                        <table class="two-column-first" width="50%" cellspacing="0" cellpadding="0" style="padding: 0; float: left;">  
                                             <tr>
                                                 <td>
                                                     <!--Icon table-->
@@ -378,11 +507,11 @@
                                 </table>
 
                                 <!--Second Row-->
-                                <table class="first-row-detail" width="100%" cellspacing="0" cellpadding="0" style="padding: 0px 15px 20px;">
+                                <table class="second-row-detail" width="100%" cellspacing="0" cellpadding="0" style="padding: 0px 15px 20px;">
                                     <tr>
                                         <td>
                                             <!--Column One-->
-                                            <table class="one-column" width="50%" cellspacing="0" cellpadding="0" style="padding: 0; float: left;">  
+                                            <table class="one-column-second" width="50%" cellspacing="0" cellpadding="0" style="padding: 0; float: left;">  
                                                 <tr>
                                                     <td>
                                                         <!--Icon table-->
@@ -410,7 +539,7 @@
                                                 </tr>
                                             </table>
                                             <!--Column Two-->
-                                            <table class="one-column" width="50%" cellspacing="0" cellpadding="0" style="padding: 0; float: left;">  
+                                            <table class="two-column-second" width="50%" cellspacing="0" cellpadding="0" style="padding: 0; float: left;">  
                                                 <tr>
                                                     <td>
                                                         <!--Icon table-->
@@ -443,11 +572,11 @@
                                     </table>
     
                                 <!--Third Row-->
-                                <table class="first-row-detail" width="100%" cellspacing="0" cellpadding="0" style="padding: 0px 15px 20px;">
+                                <table class="third-row-detail" width="100%" cellspacing="0" cellpadding="0" style="padding: 0px 15px 20px;">
                                     <tr>
                                         <td>
                                             <!--Column One-->
-                                            <table class="one-column" width="50%" cellspacing="0" cellpadding="0" style="padding: 0; float: left;">  
+                                            <table class="one-column-third" width="50%" cellspacing="0" cellpadding="0" style="padding: 0; float: left;">  
                                                 <tr>
                                                     <td>
                                                         <!--Icon table-->
@@ -475,7 +604,7 @@
                                                 </tr>
                                             </table>
                                             <!--Column Two-->
-                                            <table class="one-column" width="50%" cellspacing="0" cellpadding="0" style="padding: 0; float: left;">  
+                                            <table class="two-column-third" width="50%" cellspacing="0" cellpadding="0" style="padding: 0; float: left;">  
                                                 <tr>
                                                     <td>
                                                         <!--Icon table-->
@@ -537,7 +666,7 @@
                     <!--Start of {Footer} row-->
                     <tr>
                         <td>
-                            <table class="footer-header" width="100%" cellspacing="0" cellpadding="0" style="padding: 0;">
+                            <table class="footer-container" width="100%" cellspacing="0" cellpadding="0" style="padding: 0;">
                                 <tr>
                                     <tc>
                                         <h2 style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-weight: 600; font-size: 28px; ;padding: 20px 0px; margin: 0; text-transform: uppercase; color: #1b1b1b;">
@@ -576,7 +705,7 @@
                                 <tr>
                                     <td>
                                         <p style="color: #7F887F; font-weight: 400; line-height: 1,8; font-size: 10px; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; text-align: center; padding: 20px 0; margin: 0;">
-                                            20XX All rights Reserved - Yourcompany. Is your inbox overflowing? <a href="#" style="color: #2792ec; font-weight: 600; font-size: 14px; text-decoration: none;">Unsubscribe</a>
+                                            20XX All rights Reserved - Yourcompany. Is your inbox overflowing? <a href="#" style="color: #2792ec; font-weight: 600; font-size: 10px; text-decoration: none;">Unsubscribe</a>
                                         </p>
                                     </td>
                                 </tr>
